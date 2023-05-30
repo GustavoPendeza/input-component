@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+#inputContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.inputContainerDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.inputContainerDiv span {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.inputArea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.label {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.inputSm {
+    padding: 0.6rem 0.5rem;
+}
+
+.inputMd {
+    padding: 1rem 0.5rem;
+}
+
+.inputSm::placeholder,
+.inputMd::placeholder {
+    color: #828282;
+    font-size: 14px;
+}
+
+.inputSm,
+.inputMd {
+    color: #333333;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    box-shadow: 0;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.inputSm:focus,
+.inputMd:focus {
+    outline: none;
+}
+
+.inputSm:disabled,
+.inputMd:disabled {
+    cursor: not-allowed;
+}
+
+#textarea {
+    color: #333333;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    transition: 0.2s;
+    font-family: 'Noto Sans JP', sans-serif;
+    resize: none;
+    height: 150px;
+}
+
+#textarea:focus {
+    outline: none;
+}
+
+#textarea:disabled {
+    cursor: not-allowed;
+}
